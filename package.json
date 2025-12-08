@@ -1,0 +1,16 @@
+{
+  "name": "codeeditor_project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm i --prefix backend && npm i --prefix frontein && npm run build --prefix frontein",
+    "start": "npm run start --prefix backend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "mongoose": "^8.20.0"
+  }
+}
