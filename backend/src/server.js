@@ -9,6 +9,7 @@ app.get('/health', (req, res) => {
     res.status(200).send({ health: "ok" });
 });
 
+//make ready for production
 if (ENV.NODE_ENV === "production") {
     app.use(express.static(path.join(_dir, "../frontein/dist")));
     app.get("/{*any}", (req, res) => {
